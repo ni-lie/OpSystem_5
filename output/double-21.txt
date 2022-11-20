@@ -1,0 +1,48 @@
+qemu-system-i386 -nographic -device isa-debug-exit -drive file=fs.img,index=1,media=disk,format=raw -drive file=xv6.img,index=0,media=disk,format=raw -smp 1 -m 512  || true
+c[?7l[2J[0mSeaBIOS (version 1.15.0-1)
+
+
+iPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+1FF8B4A0+1FECB4A0 CA00
+Press Ctrl-B to configure iPXE (PCI 00:03.0)...                                                                               
+
+
+Booting from Hard Disk..xv6...
+cpu0: starting 0
+sb: size 2000 nblocks 1941 ninodes 200 nlog 30 logstart 2 inodestart 32 bmap start 58
+init: starting sh
+$ test
+139 | [0] init:2 | [1] sh:2 | [2] test:2 | [3]*test:4 | [4] test:3 | [5] test:3
+140 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] test:2 | [4]*test:4 | [5] test:3
+141 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] test:3 | [4] test:2 | [5]*test:4
+142 | [0] init:2 | [1] sh:2 | [2] test:2 | [3]*test:4 | [4] test:2 | [5] test:2
+143 | [0] init:2 | [1] sh:2 | [2] test:2 | [3]*test:4 | [4] test:2 | [5] test:2
+243 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4]*test:4 | [5] test:3
+343 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4] loop:3 | [5]*test:4
+443 | [0] init:2 | [1] sh:2 | [2] test:2 | [3]*loop:4 | [4] loop:3 | [5] loop:3
+543 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4]*loop:4 | [5] loop:3
+643 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4] loop:3 | [5]*loop:4
+743 | [0] init:2 | [1] sh:2 | [2] test:2 | [3]*loop:4 | [4] loop:3 | [5] loop:3
+843 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4]*loop:4 | [5] loop:3
+943 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4] loop:3 | [5]*loop:4
+1043 | [0] init:2 | [1] sh:2 | [2] test:2 | [3]*loop:4 | [4] loop:3 | [5] loop:3
+1143 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4]*loop:4 | [5] loop:3
+1243 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4] loop:3 | [5]*loop:4
+1343 | [0] init:2 | [1] sh:2 | [2] test:2 | [3]*loop:4 | [4] loop:3 | [5] loop:3
+1443 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4]*loop:4 | [5] loop:3
+1543 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4] loop:3 | [5]*loop:4
+1643 | [0] init:2 | [1] sh:2 | [2] test:2 | [3]*loop:4 | [4] loop:3 | [5] loop:3
+1743 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4]*loop:4 | [5] loop:3
+1843 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4] loop:3 | [5]*loop:4
+1943 | [0] init:2 | [1] sh:2 | [2] test:2 | [3]*loop:4 | [4] loop:3 | [5] loop:3
+2043 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4]*loop:4 | [5] loop:3
+2143 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4] loop:3 | [5]*loop:4
+2243 | [0] init:2 | [1] sh:2 | [2] test:2 | [3]*loop:4 | [4] loop:3 | [5] loop:3
+2343 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4]*loop:4 | [5] loop:3
+2443 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4] loop:3 | [5]*loop:4
+2543 | [0] init:2 | [1] sh:2 | [2] test:2 | [3]*loop:4 | [4] loop:3 | [5] loop:3
+2643 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4]*loop:4 | [5] loop:3
+2743 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4] loop:3 | [5]*loop:4
+2843 | [0] init:2 | [1] sh:2 | [2] test:2 | [3]*loop:4 | [4] loop:3 | [5] loop:3
+2910 | [0] init:2 | [1] sh:2 | [2] test:3 | [3] loop:5 | [4]*loop:4 | [5] loop:3
+2971 | [0] init:2 | [1] sh:2 | [2] test:3 | [3] loop:5 | [4] loop:5 | [5]*loop:4
+3037 | [0] init:2 | [1] sh:2 | [2]*test:4 | [3] loop:5 | [4] loop:5 | [5] loop:5

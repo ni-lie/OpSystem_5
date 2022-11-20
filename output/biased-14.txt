@@ -1,0 +1,69 @@
+qemu-system-i386 -nographic -device isa-debug-exit -drive file=fs.img,index=1,media=disk,format=raw -drive file=xv6.img,index=0,media=disk,format=raw -smp 1 -m 512  || true
+c[?7l[2J[0mSeaBIOS (version 1.15.0-1)
+
+
+iPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+1FF8B4A0+1FECB4A0 CA00
+Press Ctrl-B to configure iPXE (PCI 00:03.0)...                                                                               
+
+
+Booting from Hard Disk..xv6...
+cpu0: starting 0
+sb: size 2000 nblocks 1941 ninodes 200 nlog 30 logstart 2 inodestart 32 bmap start 58
+init: starting sh
+$ test
+136 | [0] init:2 | [1] sh:2 | [2] test:2 | [3]*test:4 | [4] test:3 | [5] test:3
+137 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] test:2 | [4]*test:4 | [5] test:3
+138 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] test:3 | [4] test:2 | [5]*test:4
+138 | [0] init:2 | [1] sh:2 | [2] test:2 | [3]*test:4 | [4] test:2 | [5] test:2
+140 | [0] init:2 | [1] sh:2 | [2] test:2 | [3]*test:4 | [4] test:2 | [5] test:2
+240 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4]*test:4 | [5] test:3
+290 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4] loop:3 | [5]*test:4
+340 | [0] init:2 | [1] sh:2 | [2] test:2 | [3]*loop:4 | [4] loop:3 | [5] loop:3
+440 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4]*loop:4 | [5] loop:3
+490 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4] loop:3 | [5]*loop:4
+540 | [0] init:2 | [1] sh:2 | [2] test:2 | [3]*loop:4 | [4] loop:3 | [5] loop:3
+640 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4]*loop:4 | [5] loop:3
+690 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4] loop:3 | [5]*loop:4
+740 | [0] init:2 | [1] sh:2 | [2] test:2 | [3]*loop:4 | [4] loop:3 | [5] loop:3
+840 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4]*loop:4 | [5] loop:3
+890 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4] loop:3 | [5]*loop:4
+940 | [0] init:2 | [1] sh:2 | [2] test:2 | [3]*loop:4 | [4] loop:3 | [5] loop:3
+1040 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4]*loop:4 | [5] loop:3
+1090 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4] loop:3 | [5]*loop:4
+1140 | [0] init:2 | [1] sh:2 | [2] test:2 | [3]*loop:4 | [4] loop:3 | [5] loop:3
+1240 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4]*loop:4 | [5] loop:3
+1290 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4] loop:3 | [5]*loop:4
+1340 | [0] init:2 | [1] sh:2 | [2] test:2 | [3]*loop:4 | [4] loop:3 | [5] loop:3
+1440 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4]*loop:4 | [5] loop:3
+1490 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4] loop:3 | [5]*loop:4
+1540 | [0] init:2 | [1] sh:2 | [2] test:2 | [3]*loop:4 | [4] loop:3 | [5] loop:3
+1640 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4]*loop:4 | [5] loop:3
+1690 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4] loop:3 | [5]*loop:4
+1740 | [0] init:2 | [1] sh:2 | [2] test:2 | [3]*loop:4 | [4] loop:3 | [5] loop:3
+1840 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4]*loop:4 | [5] loop:3
+1890 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] loop:3 | [4] loop:3 | [5]*loop:4
+1940 | [0] init:2 | [1] sh:2 | [2] test:2 | [3]*loop:4 | [4] loop:3 | [5] loop:3
+1997 | [0] init:2 | [1] sh:2 | [2] test:3 | [3] loop:5 | [4]*loop:4 | [5] loop:3
+2047 | [0] init:2 | [1] sh:2 | [2] test:3 | [3] loop:5 | [4] loop:3 | [5]*loop:4
+2097 | [0] init:2 | [1] sh:2 | [2]*test:4 | [3] loop:5 | [4] loop:3 | [5] loop:3
+2097 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] ---:0 | [4]*loop:4 | [5] loop:3
+2147 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] ---:0 | [4] loop:3 | [5]*loop:4
+2197 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] ---:0 | [4]*loop:4 | [5] loop:3
+2247 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] ---:0 | [4] loop:3 | [5]*loop:4
+2297 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] ---:0 | [4]*loop:4 | [5] loop:3
+2347 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] ---:0 | [4] loop:3 | [5]*loop:4
+2397 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] ---:0 | [4]*loop:4 | [5] loop:3
+2447 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] ---:0 | [4] loop:3 | [5]*loop:4
+2497 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] ---:0 | [4]*loop:4 | [5] loop:3
+2547 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] ---:0 | [4] loop:3 | [5]*loop:4
+2597 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] ---:0 | [4]*loop:4 | [5] loop:3
+2647 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] ---:0 | [4] loop:3 | [5]*loop:4
+2697 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] ---:0 | [4]*loop:4 | [5] loop:3
+2747 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] ---:0 | [4] loop:3 | [5]*loop:4
+2797 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] ---:0 | [4]*loop:4 | [5] loop:3
+2847 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] ---:0 | [4] loop:3 | [5]*loop:4
+2897 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] ---:0 | [4]*loop:4 | [5] loop:3
+2947 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] ---:0 | [4] loop:3 | [5]*loop:4
+2997 | [0] init:2 | [1] sh:2 | [2] test:2 | [3] ---:0 | [4]*loop:4 | [5] loop:3
+3026 | [0] init:2 | [1] sh:2 | [2] test:3 | [3] ---:0 | [4] loop:5 | [5]*loop:4
+3067 | [0] init:2 | [1] sh:2 | [2]*test:4 | [3] ---:0 | [4] loop:5 | [5] loop:5
